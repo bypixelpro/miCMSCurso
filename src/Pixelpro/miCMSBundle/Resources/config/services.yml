@@ -1,0 +1,4 @@
+services:
+#    pixelpromi_cms.example:
+#        class: Pixelpro\miCMSBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

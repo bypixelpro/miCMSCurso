@@ -1,0 +1,7 @@
+pixelpromi_cms:
+    resource: "@PixelpromiCMSBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
