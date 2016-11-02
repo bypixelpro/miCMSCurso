@@ -1,3 +1,38 @@
+pixelpromi_cms_admin_post:
+        resource: "@PixelpromiCMSBundle/Resources/config/routing/post.yml"
+        prefix:   /admin/post
+
+pixelpromi_cms_admin_category:
+        resource: "@PixelpromiCMSBundle/Resources/config/routing/category.yml"
+        prefix:   /admin/category
+
+pixelpromi_cms_admin_user:
+    resource: "@PixelpromiCMSBundle/Resources/config/routing/user.yml"
+    prefix:   /admin/user
+
 pixelpromi_cms_homepage:
     path:     /
     defaults: { _controller: PixelpromiCMSBundle:Default:index }
+
+pixelpromi_cms_paginator:
+    path:     /paginator
+    defaults: { _controller: PixelpromiCMSBundle:Default:pag }
+
+
+pixelpromicms_cms_show:
+      path:     /post/{id}
+      defaults: { _controller: PixelpromiCMSBundle:Default:show }
+
+login:
+    path: /login
+    defaults: { _controller: PixelpromiCMSBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
+
+cms_lang:
+      path:     /lang/{_locale}
+      defaults: { _controller: PixelpromiCMSBundle:Default:lang }

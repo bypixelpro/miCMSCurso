@@ -1,0 +1,19 @@
+Pixelpro\miCMSBundle\Entity\Category:
+    type: entity
+    table: null
+    repositoryClass: Pixelpro\miCMSBundle\Repository\CategoryRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '60'
+    oneToMany:
+        post:
+            targetEntity: Post
+            mappedBy: category
+    lifecycleCallbacks: {  }
